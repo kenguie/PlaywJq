@@ -55,6 +55,19 @@ $(document).ready(function(){
         $("footer").fadeIn(3000);
         $("footer").fadeOut(3000);
         
+        /*var colorCode = "#";
+        var a = "";
+        // for (i=0; i<=20; i++) {
+            
+            for (i=0; i<=5; i++) {
+            var a=Math.floor(Math.random()*16).toString(16);
+            colorCode = colorCode + a;
+            };
+        console.log(colorCode);
+        $("body").css('background-color',colorCode);
+        
+        }; */
+        
         $(".one").fadeIn(3000);
         $(".four").fadeIn(3000);
         $(".head3").fadeIn(3000);
@@ -82,6 +95,10 @@ $(document).ready(function(){
         
         $(".image2 img").fadeIn(4000);
         
+        $(".image1 img").fadeOut(4000);
+        
+        $(".image2 img").fadeOut(4000);
+        
         $("footer").fadeIn(3000);
         
         $('body').animate({backgroundColor:'white'}, 2500);
@@ -92,4 +109,22 @@ $(document).ready(function(){
         letsAnimate();
     });    
 });
+
+
+
+/* random color generator using 2 vars
+ var colorCode = "#";
+//  var a = digit to string;
+ 
+var a = (Math.random().toString16);
+ 
+ $("body")(function() {
+            var randomColorChange = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+            $("body").css('background-color', randomColorChange);
+            console.log("color change started");
+        });
+        };  
+ 
+ 
+ */
 
