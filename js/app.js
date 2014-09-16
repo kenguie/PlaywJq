@@ -55,17 +55,24 @@ $(document).ready(function(){
         $("footer").fadeIn(3000);
         $("footer").fadeOut(3000);
         
-        /*var colorCode = "#";
+ /*       for (x=0; x<=20; x++) {
+
+        var colorCode = "#";
         var a = "";
-        // for (i=0; i<=20; i++) {
-            
-            for (i=0; i<=5; i++) {
-            var a=Math.floor(Math.random()*16).toString(16);
-            colorCode = colorCode + a;
-            };
-        console.log(colorCode);
+
+        for (i=0; i<=5; i++) {
+
+        var a=Math.floor(Math.random()*16).toString(16);
+        //so I generated a random number rounded down from 0 to 16 & to string changes 10 to 16 into corresponding letters
+        // alert(a);
+
+        colorCode = colorCode + a;
+        // alert(colorCode);    
+        };
+
         $("body").css('background-color',colorCode);
-        
+        //$("body").text("Code "+colorCode);
+        console.log("code: "+colorCode);
         }; */
         
         $(".one").fadeIn(3000);
@@ -91,13 +98,13 @@ $(document).ready(function(){
             "margin-left":"0"
         },4000);
         
-        $(".image1 img").fadeIn(4000);
+        $(".image1 img").fadeIn(5000);
         
-        $(".image2 img").fadeIn(4000);
+        $(".image2 img").fadeIn(5000);
         
-        $(".image1 img").fadeOut(4000);
+        $(".image1 img").fadeOut(5000);
         
-        $(".image2 img").fadeOut(4000);
+        $(".image2 img").fadeOut(5000);
         
         $("footer").fadeIn(3000);
         
@@ -116,15 +123,26 @@ $(document).ready(function(){
  var colorCode = "#";
 //  var a = digit to string;
  
-var a = (Math.random().toString16);
- 
- $("body")(function() {
-            var randomColorChange = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-            $("body").css('background-color', randomColorChange);
-            console.log("color change started");
-        });
-        };  
- 
+for (x=0; x<=20; x++) {
+
+var colorCode = "#";
+var a = "";
+
+for (i=0; i<=5; i++) {
+
+var a=Math.floor(Math.random()*16).toString(16);
+//so I generated a random number rounded down from 0 to 16 & to string changes 10 to 16 into corresponding letters
+// alert(a);
+
+colorCode = colorCode + a;
+// alert(colorCode);
+    
+};
+
+$("body").css('background-color',colorCode);
+$("body").text("Code "+colorCode);
+console.log("code: "+colorCode);
+};
  
  */
 
